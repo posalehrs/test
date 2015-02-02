@@ -30,7 +30,7 @@ public class GoogleTranslator {
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
         conn.addRequestProperty("User-Agent", this.userAgent);
         conn.setRequestMethod("GET");
-        conn.setConnectTimeout(30000);
+        conn.setConnectTimeout(70000);
         conn.connect();
 
         InputStream inputStream = conn.getInputStream();
